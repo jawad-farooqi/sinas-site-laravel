@@ -9,7 +9,31 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('website.home');
-});
+})->name('home');
+
+Route::get('/courses', function () {
+    return view('website.courses');
+})->name('courses');
+
+Route::get('/about', function () {
+    return view('website.about');
+})->name('about');
+
+Route::get('/contact', function () {
+    return view('website.contact');
+})->name('contact');
+
+Route::get('/admissions', function () {
+    return view('website.admissions');
+})->name('admissions');
+
+Route::get('/gallery', function () {
+    return view('website.gallery');
+})->name('gallery');
+
+Route::get('/news', function () {
+    return view('website.news.index');
+})->name('news');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

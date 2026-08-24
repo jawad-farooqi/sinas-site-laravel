@@ -2,7 +2,7 @@
 
 @section('title', 'SINAS - Home')
 
-@section('content')
+@section('content') 
 
 <!-- ===================== HERO ===================== -->
 <header class="hero-vital">
