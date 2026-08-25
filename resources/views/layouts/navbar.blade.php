@@ -15,6 +15,7 @@
         <li class="nav-item"><a class="nav-link nav-link-vital {{ request()->routeIs('news') ? 'active' : '' }}" href="{{ route('news') }}">News</a></li>
         <li class="nav-item"><a class="nav-link nav-link-vital {{ request()->routeIs('gallery') ? 'active' : '' }}" href="{{ route('gallery') }}">Gallery</a></li>
         <li class="nav-item"><a class="nav-link nav-link-vital {{ request()->routeIs('admissions') ? 'active' : '' }}" href="{{ route('admissions') }}">Admissions</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-vital {{ request()->routeIs('vision') ? 'active' : '' }}" href="{{ route('vision') }}">Vision</a></li>
         <li class="nav-item"><a class="nav-link nav-link-vital {{ request()->routeIs('contact') ? 'active' : '' }}" href="{{ route('contact') }}">Contact</a></li>
       </ul>
       <div id="nav-guest" class="d-flex gap-2">

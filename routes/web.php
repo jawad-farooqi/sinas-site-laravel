@@ -15,10 +15,6 @@ Route::get('/courses', function () {
     return view('website.courses');
 })->name('courses');
 
-Route::get('/about', function () {
-    return view('website.about');
-})->name('about');
-
 Route::get('/contact', function () {
     return view('website.contact');
 })->name('contact');
@@ -30,6 +26,10 @@ Route::get('/admissions', function () {
 Route::get('/gallery', function () {
     return view('website.gallery');
 })->name('gallery');
+
+Route::get('/vision', function () {
+    return view('website.vision');
+})->name('vision');
 
 Route::get('/news', function () {
     return view('website.news.index');
