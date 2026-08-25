@@ -41,3 +41,5 @@ Set .env
     update database credentials
 
 Upload database
+
+Test
