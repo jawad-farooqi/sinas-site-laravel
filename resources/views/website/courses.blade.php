@@ -6,9 +6,9 @@
 
 <header class="hero-vital py-5">
   <div class="container py-4 position-relative">
-    <span class="eyebrow" style="color:var(--gold);">Programs</span>
-    <h1 class="font-display mt-2 mb-2" style="color:#fff; font-size:clamp(2rem,4vw,2.8rem);">Every program leads to a license, a placement, and a practice.</h1>
-    <p style="color:rgba(255,255,255,0.75); max-width:640px;">Three entry points, one standard of clinical readiness. Compare tracks below or filter by how much time you have.</p>
+    <span class="eyebrow" style="color:var(--gold);">Courses</span>
+    <h1 class="font-display mt-2 mb-2" style="color:#fff; font-size:clamp(2rem,4vw,2.8rem);">Every course leads to a license, a placement, and a practice.</h1>
+    <p style="color:rgba(255,255,255,0.75); max-width:640px;">Two entry points, one standard of clinical readiness. Compare tracks below or filter by how much time you have.</p>
   </div>
 </header>
 
