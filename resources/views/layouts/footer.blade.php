@@ -34,7 +34,7 @@
       </div>
     </div>
     <div class="pt-4 border-top d-flex flex-wrap justify-content-between gap-2" style="border-color:rgba(255,255,255,0.12) !important;">
-      <p class="small mb-0">&copy; 2026 SINAS - College of Nursing. All rights reserved.</p>
+      <p class="small mb-0">&copy; 2026 SINAS - All rights reserved.</p>
       
     </div>
   </div>
