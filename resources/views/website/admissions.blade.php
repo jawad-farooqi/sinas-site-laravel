@@ -60,7 +60,7 @@
           </div>
           <div class="accordion-item border-0 mb-3 card-vital">
             <h3 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#reqABSN">Accelerated BSN</button>
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#reqABSN">Lady Health Visit Program</button>
             </h3>
             <div id="reqABSN" class="accordion-collapse collapse" data-bs-parent="#reqAccordion">
               <div class="accordion-body small text-ink-soft">
@@ -68,26 +68,15 @@
               </div>
             </div>
           </div>
-          <div class="accordion-item border-0 mb-3 card-vital">
-            <h3 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#reqMSN">MSN — Family Nurse Practitioner</button>
-            </h3>
-            <div id="reqMSN" class="accordion-collapse collapse" data-bs-parent="#reqAccordion">
-              <div class="accordion-body small text-ink-soft">
-                Active unrestricted RN license &middot; BSN with 3.2 GPA &middot; minimum one year acute-care experience &middot; statement of clinical intent.
-              </div>
-            </div>
-          </div>
-        </div>
+          
 
         <h2 class="h4 mt-5 mb-3">Tuition &amp; deadlines</h2>
         <div class="table-responsive">
           <table class="table table-vital align-middle">
             <thead><tr><th>Program</th><th>Per year</th><th>Fall deadline</th><th>Spring deadline</th></tr></thead>
             <tbody>
-              <tr><td>BSN</td><td class="font-mono">$28,400</td><td class="font-mono">Mar 1</td><td class="font-mono">Oct 1</td></tr>
-              <tr><td>Accelerated BSN</td><td class="font-mono">$34,900</td><td class="font-mono">Jan 15</td><td class="font-mono">Jun 15</td></tr>
-              <tr><td>MSN — FNP</td><td class="font-mono">$21,700</td><td class="font-mono">Apr 1</td><td class="font-mono">Nov 1</td></tr>
+              <tr><td>BSN</td><td class="font-mono">42,200</td><td class="font-mono">Mar 1</td><td class="font-mono">Oct 1</td></tr>
+              <tr><td>Lady Health Visit Program</td><td class="font-mono">34,800</td><td class="font-mono">Jan 15</td><td class="font-mono">Jun 15</td></tr>
             </tbody>
           </table>
         </div>
@@ -105,9 +94,7 @@
               <select class="form-select" required>
                 <option value="" selected disabled>Choose one</option>
                 <option>Bachelor of Science in Nursing</option>
-                <option>Accelerated BSN</option>
-                <option>MSN — Family Nurse Practitioner</option>
-                <option>Certificate program</option>
+                <option>Lady Health Visit Program</option>
               </select>
             </div>
             <button class="btn-vital w-100 justify-content-center" type="submit">Send my checklist</button>
