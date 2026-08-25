@@ -14,12 +14,12 @@
   <div class="container section-pad position-relative" style="padding-top:6rem; padding-bottom:6rem;">
     <div class="row align-items-center g-5">
       <div class="col-lg-7">
-        <span class="eyebrow" style="color:var(--gold);">CCNE-accredited &middot; est. 1987</span>
+        <span class="eyebrow" style="color:var(--gold);">Accredited &middot; est. 2026</span>
         <h1 class="font-display mt-3 mb-4" style="color:#fff; font-size:clamp(2.4rem, 5vw, 3.6rem); line-height:1.08;">
-          Steady hands begin<br> with steady training.
+           Saidu Institute of Nursing <br> and Allied Health Sciences
         </h1>
         <p class="fs-5 mb-4" style="color:rgba(255,255,255,0.78); max-width:540px;">
-          Meridian prepares nurses for the moments that matter — through clinical hours from week one, faculty who still practice, and a pass-rate record employers already trust.
+          SINAS prepares nurses for the moments that matter — through clinical hours from week one, faculty who still practice, and a pass-rate record employers already trust.
         </p>
         <div class="d-flex flex-wrap gap-3 mb-5">
           <a href="admissions.html" class="btn-vital btn-coral">Start your application <i class="bi bi-arrow-right"></i></a>
@@ -28,20 +28,23 @@
         <div class="row g-3">
           <div class="col-4">
             <div class="stat-chip">
-              <div class="num"><span data-count-to="96" data-suffix="%">0%</span></div>
-              <div class="small" style="color:rgba(255,255,255,0.65);">NCLEX pass rate</div>
+              <div class="num"><span data-count-to="100" data-suffix="%">Paid Internships</span></div>
+              <div class="small" style="color:rgba(255,255,255,0.65);">Paid Internships</div>
+              <div class="small" style="color:rgba(255,255,255,0.65);">For All Students</div>
             </div>
           </div>
           <div class="col-4">
             <div class="stat-chip">
-              <div class="num"><span data-count-to="38" data-suffix="+">0+</span></div>
-              <div class="small" style="color:rgba(255,255,255,0.65);">Years training nurses</div>
+              <div class="num"><span data-count-to="100" data-suffix="%">Free NCLEX preparations</span></div>
+              <div class="small" style="color:rgba(255,255,255,0.65);">Free NCLEX preparations</div>
+              <div class="small" style="color:rgba(255,255,255,0.65);">For All Students</div>
             </div>
           </div>
           <div class="col-4">
             <div class="stat-chip">
-              <div class="num"><span data-count-to="24" data-suffix="">0</span></div>
-              <div class="small" style="color:rgba(255,255,255,0.65);">Partner clinical sites</div>
+              <div class="num"><span data-count-to="100" data-suffix="%">Fully Funded Scholarships</span></div>
+              <div class="small" style="color:rgba(255,255,255,0.65);">Merit Based</div>
+              <div class="small" style="color:rgba(255,255,255,0.65);">Fully Funded Scholarships</div>
             </div>
           </div>
         </div>
@@ -62,16 +65,16 @@
   </div>
 </header>
 
-<!-- ===================== PROGRAMS ===================== -->
+<!-- ===================== COURSES ===================== -->
 <section class="section-pad">
   <div class="container">
     <div class="row align-items-end mb-5">
       <div class="col-md-8 reveal">
-        <span class="eyebrow">Programs</span>
-        <h2 class="font-display mt-2" style="font-size:2.2rem;">Three paths into practice</h2>
+        <span class="eyebrow">Courses</span>
+        <h2 class="font-display mt-2" style="font-size:2.2rem;">Two paths into practice</h2>
       </div>
       <div class="col-md-4 text-md-end reveal">
-        <a href="courses.html" class="fw-semibold text-teal">View full catalog <i class="bi bi-arrow-right"></i></a>
+        <a href="https://darkorchid-ibex-341102.hostingersite.com/courses" class="fw-semibold text-teal">View full catalog <i class="bi bi-arrow-right"></i></a>
       </div>
     </div>
     <div class="row g-4">
@@ -80,23 +83,16 @@
           <span class="badge-vital mb-3 d-inline-block">4-year</span>
           <h3 class="h5 mb-2">Bachelor of Science in Nursing</h3>
           <p class="text-ink-soft small mb-3">Full generalist preparation across med-surg, pediatric, maternal, psychiatric and community rotations.</p>
-          <a href="courses.html#bsn" class="fw-semibold small text-teal">Program details <i class="bi bi-arrow-right"></i></a>
+          <a href="https://darkorchid-ibex-341102.hostingersite.com/courses#bsn" class="fw-semibold small text-teal">Program details <i class="bi bi-arrow-right"></i></a>
         </div>
       </div>
-      <div class="col-md-4 reveal">
-        <div class="card-vital p-4 h-100">
-          <span class="badge-vital gold mb-3 d-inline-block">18-month</span>
-          <h3 class="h5 mb-2">Accelerated BSN</h3>
-          <p class="text-ink-soft small mb-3">For career-changers with a prior bachelor's degree — compressed theory, same clinical hour requirements.</p>
-          <a href="courses.html#absn" class="fw-semibold small text-teal">Program details <i class="bi bi-arrow-right"></i></a>
-        </div>
-      </div>
+    
       <div class="col-md-4 reveal">
         <div class="card-vital p-4 h-100">
           <span class="badge-vital coral mb-3 d-inline-block">2-year</span>
-          <h3 class="h5 mb-2">Master of Science, Family NP</h3>
-          <p class="text-ink-soft small mb-3">Advanced practice training with 700+ precepted clinical hours across primary-care settings.</p>
-          <a href="courses.html#msn" class="fw-semibold small text-teal">Program details <i class="bi bi-arrow-right"></i></a>
+          <h3 class="h5 mb-2">Lady Health Visit Program</h3>
+          <p class="text-ink-soft small mb-3">Equipping students with essential skills in maternal, newborn, child, and community healthcare.</p>
+          <a href="https://darkorchid-ibex-341102.hostingersite.com/courses#lhv" class="fw-semibold small text-teal">Program details <i class="bi bi-arrow-right"></i></a>
         </div>
       </div>
     </div>
@@ -121,12 +117,12 @@
   </div>
 </section>
 
-<!-- ===================== WHY MERIDIAN ===================== -->
+<!-- ===================== WHY SINAS ===================== -->
 <section class="section-pad bg-teal-mist">
   <div class="container">
     <div class="row g-5 align-items-center">
       <div class="col-lg-5 reveal">
-        <span class="eyebrow">Why Meridian</span>
+        <span class="eyebrow">Why SINAS</span>
         <h2 class="font-display mt-2 mb-3" style="font-size:2rem;">Clinical hours from your first semester, not your last.</h2>
         <p class="text-ink-soft">Most programs save the bedside for year three. Ours starts week four, in small supervised groups, so the habits that matter — assessment, documentation, bedside manner — are built early and repeated often.</p>
       </div>
@@ -166,19 +162,7 @@
   </div>
 </section>
 
-<!-- ===================== TESTIMONIAL ===================== -->
-<section class="section-pad">
-  <div class="container">
-    <div class="row justify-content-center text-center reveal">
-      <div class="col-lg-8">
-        <i class="bi bi-quote fs-1 text-teal opacity-50"></i>
-        <p class="font-display" style="font-size:1.5rem; color:var(--teal-deep);">"I walked into my first ICU shift already knowing how to hold a code sheet steady. That's the difference three years of Meridian's simulation labs made."</p>
-        <p class="fw-semibold mb-0 mt-3">Renata Cole, BSN '24</p>
-        <p class="small text-ink-soft font-mono">RN, Overlake Medical Center</p>
-      </div>
-    </div>
-  </div>
-</section>
+
 
 <!-- ===================== CTA ===================== -->
 <section class="section-pad bg-teal-deep text-white">

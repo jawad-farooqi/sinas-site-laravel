@@ -1,9 +1,9 @@
 <!-- ===================== NAVBAR ===================== -->
 <nav class="navbar navbar-expand-lg mc-nav py-3">
   <div class="container">
-    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="{{ route('home') }}">
       <span class="brand-mark font-mono fw-bold"><img src="{{ asset('images/sinas-logo.png') }}" alt="SINAS Logo" class="img-fluid"></span>
-      <span class="font-display fw-600" style="font-size:1.15rem;">SINAS <span class="text-teal">Nursing College</span></span>
+      <span class="font-display fw-600" style="font-size:1.15rem;">SINAS</span>
     </a>
     <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
       <i class="bi bi-list fs-2"></i>
