@@ -18,15 +18,39 @@
         <h2 class="h5 mb-3">Campus &amp; offices</h2>
         <div class="card-vital p-4 mb-3">
           <p class="fw-semibold small mb-1"><i class="bi bi-geo-alt text-teal me-2"></i>Address</p>
-          <p class="small text-ink-soft mb-0">120 Harrow Street, Cedarville, ST 04821</p>
+          <p class="small text-ink-soft mb-0">Chinar Bagh Colony, Chail Shagai, Saidu Sharif, Swat</p>
         </div>
         <div class="card-vital p-4 mb-3">
           <p class="fw-semibold small mb-1"><i class="bi bi-telephone text-teal me-2"></i>Admissions office</p>
-          <p class="small text-ink-soft mb-0">(555) 019-2244 &middot; Mon–Fri, 8am–5pm</p>
+          <p class="small text-ink-soft mb-0">0319-9309590 · Mon–Fri, 8am–4pm</p>
         </div>
         <div class="card-vital p-4 mb-3">
           <p class="fw-semibold small mb-1"><i class="bi bi-envelope text-teal me-2"></i>Email</p>
-          <p class="small text-ink-soft mb-0">admissions@meridian.edu</p>
+          <p class="small text-ink-soft mb-0">
+              <span class="email-protected"
+                    data-user="info"
+                    data-domain="sinas.edu.pk"></span>
+          </p>
+          <p class="small text-ink-soft mb-0">
+              <span class="email-protected"
+                    data-user="sinas.swat"
+                    data-domain="gmail.com"></span>
+          </p>
+
+          <script>
+          document.addEventListener('DOMContentLoaded', function () {
+              document.querySelectorAll('.email-protected').forEach(function (el) {
+                  const email = el.dataset.user + '@' + el.dataset.domain;
+
+                  const link = document.createElement('a');
+                  link.href = 'mailto:' + email;
+                  link.textContent = email;
+                  link.className = 'text-ink-soft text-decoration-none';
+
+                  el.replaceWith(link);
+              });
+          });
+          </script>
         </div>
         <div class="card-vital p-4">
           <p class="fw-semibold small mb-2"><i class="bi bi-map text-teal me-2"></i>Campus map</p>
