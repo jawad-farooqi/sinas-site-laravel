@@ -74,7 +74,7 @@
         <h2 class="font-display mt-2" style="font-size:2.2rem;">Two paths into practice</h2>
       </div>
       <div class="col-md-4 text-md-end reveal">
-        <a href="https://darkorchid-ibex-341102.hostingersite.com/courses" class="fw-semibold text-teal">View full catalog <i class="bi bi-arrow-right"></i></a>
+        <a href="{{ route('courses') }}" class="fw-semibold text-teal">View full catalog <i class="bi bi-arrow-right"></i></a>
       </div>
     </div>
     <div class="row g-4">
@@ -83,7 +83,7 @@
           <span class="badge-vital mb-3 d-inline-block">4-year</span>
           <h3 class="h5 mb-2">Bachelor of Science in Nursing</h3>
           <p class="text-ink-soft small mb-3">Full generalist preparation across med-surg, pediatric, maternal, psychiatric and community rotations.</p>
-          <a href="https://darkorchid-ibex-341102.hostingersite.com/courses#bsn" class="fw-semibold small text-teal">Program details <i class="bi bi-arrow-right"></i></a>
+          <a href="{{ route('courses') }}#bsn" class="fw-semibold small text-teal">Program details <i class="bi bi-arrow-right"></i></a>
         </div>
       </div>
     
@@ -92,7 +92,7 @@
           <span class="badge-vital coral mb-3 d-inline-block">2-year</span>
           <h3 class="h5 mb-2">Lady Health Visit Program</h3>
           <p class="text-ink-soft small mb-3">Equipping students with essential skills in maternal, newborn, child, and community healthcare.</p>
-          <a href="https://darkorchid-ibex-341102.hostingersite.com/courses#lhv" class="fw-semibold small text-teal">Program details <i class="bi bi-arrow-right"></i></a>
+          <a href="{{ route('courses') }}#lhv" class="fw-semibold small text-teal">Program details <i class="bi bi-arrow-right"></i></a>
         </div>
       </div>
     </div>

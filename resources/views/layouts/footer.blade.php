@@ -5,7 +5,7 @@
       <div class="col-lg-4">
         <a href="{{ route('home') }}" class="d-flex align-items-center gap-2 mb-3">
           <span class="brand-mark font-mono fw-bold">
-            <img src="https://darkorchid-ibex-341102.hostingersite.com/images/sinas-logo.png"
+            <img src="{{ asset('images/sinas-logo.png') }}"
                  alt="SINAS Logo"
                  style="width: 80px; height: auto;">
         </span>
@@ -41,9 +41,9 @@
 </footer>
  
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://darkorchid-ibex-341102.hostingersite.com/js/auth.js"></script>
-<script src="https://darkorchid-ibex-341102.hostingersite.com/js/dashboard.js"></script>
-<script src="https://darkorchid-ibex-341102.hostingersite.com/js/main.js"></script>
+<script src="{{ asset('js/auth.js') }}"></script>
+<script src="{{ asset('js/dashboard.js') }}"></script>
+<script src="{{ asset('js/main.js') }}"></script>
 <script>
   document.addEventListener("DOMContentLoaded", () => {
     const list = document.getElementById("landingNewsList");
