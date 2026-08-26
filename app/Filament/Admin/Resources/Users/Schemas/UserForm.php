@@ -14,15 +14,29 @@ class UserForm
         return $schema
             ->components([
                 TextInput::make('name')
-                    ->required(),
+                    ->required()
+                    ->minLength(3)
+                    ->maxLength(100)
+                    ->regex('/^[\pL\s]+$/u'),
                 TextInput::make('email')
                     ->label('Email address')
                     ->email()
-                    ->required(),
+                    ->required()
+                    ->maxLength(255)
+                    ->unique(ignoreRecord: true),
                 TextInput::make('password')
                     ->password()
-                    ->required(),
+                    ->revealable()
+                    ->minLength(8)
+                    ->maxLength(255)
+                    ->required(fn (string $operation): bool => $operation === 'create')
+                    ->same('password_confirmation'),
+                TextInput::make('password_confirmation')
+                    ->password()
+                    ->revealable()
+                    ->required(fn (string $operation): bool => $operation === 'create'),
                 Toggle::make('is_active')
+                    ->default(true)
                     ->required(),
             ]);
     }

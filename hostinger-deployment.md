@@ -6,13 +6,15 @@ Run all commands on local machine
 
     php artisan serve
 
+    Test Run
+
 Zip your project directory
 
 Upload zip folder of sinas-site-laravel to hostinger file manager
 
-Extract it
+Extract it to sinas folder (new folder named sinas will be created)
 
-Move the files of public folder of sinas-site-laravel to public_html
+Move the files of public folder in sinas to public_html folder
 
 Update index.php of public_html (moved from public folder of project)
     <?php
@@ -37,9 +39,12 @@ Update index.php of public_html (moved from public folder of project)
     $app = require_once '/home/u234989298/domains/darkorchid-ibex-341102.hostingersite.com/sinas/bootstrap/app.php';
     $app->handleRequest(Request::capture());
 
+Upload database
+
 Set .env
     update database credentials
 
-Upload database
+Go to Website Configuration
+    Advanced -> Php Configuration -> Select 8.5 -> update
 
 Test
