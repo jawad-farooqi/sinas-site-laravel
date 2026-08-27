@@ -33,7 +33,11 @@ Route::get('/vision', function () {
 
 Route::get('/news', function () {
     return view('website.news.index');
-})->name('news');
+})->name('news'); 
+
+Route::get('/test', function () {
+    return 'Laravel test route is working!';
+});
 
 Route::get('/dashboard', function () {
     return view('dashboard');
