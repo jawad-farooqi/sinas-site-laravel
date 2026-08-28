@@ -6,6 +6,7 @@ use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Schemas\Schema;
+use Illuminate\Support\Facades\Hash;
 
 class UserForm
 {
@@ -36,7 +37,8 @@ class UserForm
                 TextInput::make('password_confirmation')
                     ->password()
                     ->revealable()
-                    ->required(fn (string $operation): bool => $operation === 'create'),
+                    ->required(fn (string $operation): bool => $operation === 'create')
+                    ->dehydrated(false),
                 Toggle::make('is_active')
                     ->default(true)
                     ->required(),
