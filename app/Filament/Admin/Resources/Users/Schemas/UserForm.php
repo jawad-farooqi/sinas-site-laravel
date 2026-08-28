@@ -7,6 +7,7 @@ use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Schemas\Schema;
 use Illuminate\Support\Facades\Hash;
+use App\Models\User;
 
 class UserForm
 {
@@ -41,7 +42,8 @@ class UserForm
                     ->dehydrated(false),
                 Toggle::make('is_active')
                     ->default(true)
-                    ->required(),
+                    ->required()
+                    ->disabled(fn (?User $record): bool => $record?->id === auth()->id()),
             ]);
     }
 }

@@ -47,4 +47,10 @@ class UserResource extends Resource
             'edit' => EditUser::route('/{record}/edit'),
         ];
     }
+
+    public static function canDelete($record): bool
+    {
+        return $record->id !== auth()->id();
+    }
+    
 }
