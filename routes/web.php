@@ -3,9 +3,6 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
 
 Route::get('/', function () {
     return view('website.home');
@@ -34,10 +31,6 @@ Route::get('/vision', function () {
 Route::get('/news', function () {
     return view('website.news.index');
 })->name('news'); 
-
-Route::get('/test', function () {
-    return 'Laravel test route is working!';
-});
 
 // Route::get('/dashboard', function () {
 //     return view('dashboard');
