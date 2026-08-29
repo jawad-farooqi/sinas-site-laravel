@@ -11,6 +11,11 @@ class CreateUser extends CreateRecord
 
     private ?string $selectedRole = null;
 
+    protected function getRedirectUrl(): string 
+    { 
+        return $this->getResource()::getUrl('index'); 
+    }
+
     protected function mutateFormDataBeforeCreate(array $data): array 
     { 
         // Get the selected role from the form. 
