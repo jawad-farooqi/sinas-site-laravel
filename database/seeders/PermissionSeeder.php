@@ -14,6 +14,11 @@ class PermissionSeeder extends Seeder
     public function run(): void
     {
         //
+        Permission::firstOrCreate([ 
+            'name' => 'manage all', 
+            'guard_name' => 'web', 
+        ]);
+
         Permission::firstOrCreate([
             'name' => 'delete users',
             'guard_name' => 'web',

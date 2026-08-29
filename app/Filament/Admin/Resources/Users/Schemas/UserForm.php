@@ -22,14 +22,22 @@ class UserForm
                     ->required()
                     ->minLength(3)
                     ->maxLength(100)
-                    ->regex('/^[\pL\s]+$/u'),
+                    ->regex('/^[\pL\s]+$/u')
+                    ->disabled( 
+                        fn (?User $record): bool => 
+                        $record?->can('manage all') ?? false 
+                    ),
 
                 TextInput::make('email')
                     ->label('Email address')
                     ->email()
                     ->required()
                     ->maxLength(255)
-                    ->unique(ignoreRecord: true),
+                    ->unique(ignoreRecord: true)
+                    ->disabled( 
+                        fn (?User $record): bool => 
+                        $record?->can('manage all') ?? false 
+                    ),
 
                 TextInput::make('password')
                     ->password()
@@ -39,13 +47,21 @@ class UserForm
                     ->required(fn (string $operation): bool => $operation === 'create')
                     ->same('password_confirmation')
                     ->dehydrateStateUsing(fn ($state) => filled($state) ? Hash::make($state) : null)
-                    ->dehydrated(fn ($state) => filled($state)),
+                    ->dehydrated(fn ($state) => filled($state))
+                    ->disabled( 
+                        fn (?User $record): bool => 
+                        $record?->can('manage all') ?? false 
+                    ),
 
                 TextInput::make('password_confirmation')
                     ->password()
                     ->revealable()
                     ->required(fn (string $operation): bool => $operation === 'create')
-                    ->dehydrated(false),
+                    ->dehydrated(false)
+                    ->disabled( 
+                        fn (?User $record): bool => 
+                        $record?->can('manage all') ?? false 
+                    ),
 
                 Select::make('role')
                     ->label('Role')
@@ -56,12 +72,20 @@ class UserForm
                     )
                     ->default('viewer')
                     ->required()
-                    ->searchable(),
+                    ->searchable()
+                    ->disabled( 
+                        fn (?User $record): bool => 
+                        $record?->can('manage all') ?? false 
+                    ),
 
                 Toggle::make('is_active')
                     ->default(true)
                     ->required()
-                    ->disabled(fn (?User $record): bool => $record?->id === auth()->id()),
+                    ->disabled( 
+                        fn (?User $record): bool => 
+                        $record?->id === auth()->id()
+                        || $record?->can('manage all') 
+                    ),
             ]);  // End of components
     }
 }

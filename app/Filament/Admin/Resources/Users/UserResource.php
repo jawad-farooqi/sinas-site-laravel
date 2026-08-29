@@ -60,7 +60,8 @@ class UserResource extends Resource
     // Only admins can delete users in the Filament admin panel.
     public static function canDelete($record): bool 
     { 
-        return auth()->user()?->can('delete users') 
+        return auth()->user()?->can('delete users')
+        && ! $record->can('manage all')
         && $record->id !== auth()->id();
     }
 
