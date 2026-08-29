@@ -39,6 +39,30 @@ class UserResource extends Resource
         ];
     }
 
+    // Only admins can view the Users resource in the Filament admin panel.
+    public static function canViewAny(): bool 
+    { 
+        return auth()->user()?->hasRole('admin') ?? false; 
+    }
+
+    // Only admins can create new users in the Filament admin panel.
+    public static function canCreate(): bool 
+    { 
+        return auth()->user()?->hasRole('admin') ?? false; 
+    }
+
+    // Only admins can edit users in the Filament admin panel.
+    public static function canEdit($record): bool 
+    { 
+        return auth()->user()?->hasRole('admin') ?? false; 
+    }
+
+    // Only admins can delete users in the Filament admin panel.
+    public static function canDelete($record): bool 
+    { 
+        return auth()->user()?->hasRole('admin') && $record->id !== auth()->id(); 
+    }
+
     public static function getPages(): array
     {
         return [
@@ -46,11 +70,6 @@ class UserResource extends Resource
             'create' => CreateUser::route('/create'),
             'edit' => EditUser::route('/{record}/edit'),
         ];
-    }
-
-    public static function canDelete($record): bool
-    {
-        return $record->id !== auth()->id();
     }
     
 }
