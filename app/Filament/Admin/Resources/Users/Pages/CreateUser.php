@@ -9,11 +9,18 @@ class CreateUser extends CreateRecord
 {
     protected static string $resource = UserResource::class;
 
+    private ?string $selectedRole = null;
+
     protected function mutateFormDataBeforeCreate(array $data): array 
     { 
         // Get the selected role from the form. 
         
-        $this->selectedRole = $this->form->getState()['role'] ?? 'viewer'; 
+        $this->selectedRole = $data['role'] ?? 'viewer';
+
+        // 'role' is NOT a column in the users table. 
+        // Remove it before Filament creates the User. 
+         
+        unset($data['role']); return $data;
         
         return $data; 
     } 
@@ -26,5 +33,4 @@ class CreateUser extends CreateRecord
             } 
     } 
     
-    private ?string $selectedRole = null;
 }

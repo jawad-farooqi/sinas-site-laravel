@@ -30,7 +30,7 @@ class UserForm
                     ->required()
                     ->maxLength(255)
                     ->unique(ignoreRecord: true),
-                
+
                 TextInput::make('password')
                     ->password()
                     ->revealable()
@@ -56,7 +56,7 @@ class UserForm
                     )
                     ->default('viewer')
                     ->required()
-                    ->dehydrated(false),
+                    ->searchable(),
 
                 Toggle::make('is_active')
                     ->default(true)
