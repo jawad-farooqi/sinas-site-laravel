@@ -6,6 +6,7 @@ use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\Toggle;
 use Filament\Forms\Components\Section;
+use Illuminate\Support\Str;
 
 use Filament\Schemas\Schema;
 
@@ -16,17 +17,31 @@ class NewsCategoryForm
         return $schema
             ->components([
                 TextInput::make('name')
-                    ->required(),
+                    ->required()
+                    ->minLength(3)
+                    ->maxLength(255)
+                    ->live(onBlur: true)
+                    ->afterStateUpdated(function ($state, callable $set) {
+                        $slug = Str::slug($state);
+
+                        $set('slug', $slug);
+                    }),
+
                 TextInput::make('slug')
-                    ->required(),
-                TextInput::make('description')
+                    ->required()
+                    ->maxLength(255)
+                    ->unique(ignoreRecord: true),
+
+                Textarea::make('description')
+                    ->rows(3)
+                    ->maxlength(1000)
                     ->default(null),
+
                 Toggle::make('is_active')
                     ->required(),
+
                 TextInput::make('sort_order')
-                    ->required()
-                    ->numeric()
-                    ->default(0),
+                    ->numeric(),
             ]);
     }
 }
