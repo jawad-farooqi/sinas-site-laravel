@@ -16,25 +16,24 @@ class NewsCategoriesTable
         return $table
             ->columns([
                 TextColumn::make('name')
-                    ->searchable(),
+                    ->searchable()
+                    ->sortable(),
+
                 TextColumn::make('slug')
                     ->searchable(),
-                TextColumn::make('description')
-                    ->searchable(),
+
                 IconColumn::make('is_active')
+                    ->label('Active')
                     ->boolean(),
+
                 TextColumn::make('sort_order')
-                    ->numeric()
                     ->sortable(),
+
                 TextColumn::make('created_at')
                     ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
-                TextColumn::make('updated_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
+                    ->sortable(),
             ])
+            ->defaultSort('sort_order')
             ->filters([
                 //
             ])
