@@ -19,8 +19,8 @@
         <li class="nav-item"><a class="nav-link nav-link-vital {{ request()->routeIs('contact') ? 'active' : '' }}" href="{{ route('contact') }}">Contact</a></li>
       </ul>
       <div id="nav-guest" class="d-flex gap-2">
-        <a href="{{ route('login') }}" class="btn-outline-vital">Log in</a>
-        <a href="{{ route('register') }}" class="btn-vital">Apply now</a>
+        <a href="{{ route('filament.admin.auth.login') }}" class="btn-outline-vital">Log in</a>
+        <!-- <a href="#" class="btn-vital">Apply now</a> -->
       </div>
       <div id="nav-user" class="d-none dropdown">
         <button class="btn-outline-vital dropdown-toggle d-flex align-items-center gap-2" data-bs-toggle="dropdown">
@@ -28,7 +28,7 @@
           <span class="role-badge" data-user-role>role</span>
         </button>
         <ul class="dropdown-menu dropdown-menu-end mt-2 shadow border-0" style="border-radius:8px;">
-          <li><a class="dropdown-item" href="{{ route('dashboard') }}" data-dash-link><i class="bi bi-speedometer2 me-2"></i>Dashboard</a></li>
+          <li><a class="dropdown-item" href="{{ route('filament.admin.pages.dashboard') }}" data-dash-link><i class="bi bi-speedometer2 me-2"></i>Dashboard</a></li>
           <li><a class="dropdown-item" href="#" data-logout><i class="bi bi-box-arrow-right me-2"></i>Log out</a></li>
         </ul>
       </div>

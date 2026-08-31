@@ -24,7 +24,7 @@
       <div class="col-6 col-lg-2">
         <h4 class="text-white h6 mb-3">Account</h4>
         <ul class="list-unstyled small">
-          <li class="mb-2"><a href="{{ route('login') }}">Log in</a></li>
+          <li class="mb-2"><a href="{{ route('filament.admin.auth.login') }}">Log in</a></li>
         </ul>
       </div>
       <div class="col-lg-4">
