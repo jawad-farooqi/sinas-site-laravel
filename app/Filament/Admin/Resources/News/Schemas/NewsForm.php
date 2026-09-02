@@ -18,7 +18,7 @@ class NewsForm
         return $schema
             ->components([
                 TextInput::make('title')
-                    ->required    
+                    ->required()    
                     ->minLength(3)
                     ->maxLength(255)
                     ->live(onBlur: true)
