@@ -24,6 +24,89 @@
   </div>
 </section>
 
+@extends('layouts.app')
+
+@section('content')
+
+<div class="container py-5">
+
+    <h1 class="mb-4">News & Announcements</h1>
+
+    <div class="row">
+
+        @forelse ($news as $item)
+
+            <div class="col-md-6 col-lg-4 mb-4">
+
+                <article class="card h-100">
+
+                    @if ($item->featured_image)
+                        <img
+                            src="{{ asset('storage/' . $item->featured_image) }}"
+                            class="card-img-top"
+                            alt="{{ $item->title }}"
+                        >
+                    @endif
+
+                    <div class="card-body">
+
+                        @if ($item->isExpired())
+                            <span class="badge bg-danger">
+                                Expired
+                            </span>
+                        @else
+                            <span class="badge bg-success">
+                                Published
+                            </span>
+                        @endif
+
+                        <span class="badge bg-secondary">
+                            {{ $item->category->name }}
+                        </span>
+
+                        <h2 class="h5 mt-2">
+                            {{ $item->title }}
+                        </h2>
+
+                        <p>
+                            {{ $item->excerpt }}
+                        </p>
+
+                        <small class="text-muted">
+                            {{ $item->published_at?->format('d M Y') }}
+                        </small>
+
+                    </div>
+
+                    <div class="card-footer">
+
+                        <a
+                            href="{{ route('news.show', $item->slug) }}"
+                            class="btn btn-primary"
+                        >
+                            Read More
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        @empty
+
+            <p>No news available.</p>
+
+        @endforelse
+
+    </div>
+
+    {{ $news->links() }}
+
+</div>
+
+@endsection
+
 
 
 @endsection

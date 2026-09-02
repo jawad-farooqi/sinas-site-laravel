@@ -3,6 +3,9 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class News extends Model
 {
@@ -26,7 +29,6 @@ class News extends Model
     protected function casts(): array
     {
         return [
-            'attachments' => 'array',
             'published_at' => 'datetime',
             'expires_at' => 'datetime',
             'is_featured' => 'boolean',

@@ -28,9 +28,17 @@ Route::get('/vision', function () {
     return view('website.vision');
 })->name('vision');
 
-Route::get('/news', function () {
-    return view('website.news.index');
-})->name('news'); 
+
+Route::get('/news', [NewsController::class, 'index'])
+    ->name('news.index');
+
+Route::get('/news/{slug}', [NewsController::class, 'show'])
+    ->name('news.show');
+
+// Route::get('/news', function () {
+//     return view('website.news.index');
+// })->name('news.index'); 
+
 
 // Route::get('/dashboard', function () {
 //     return view('dashboard');
